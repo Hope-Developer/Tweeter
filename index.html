@@ -53,7 +53,7 @@
         
         /* Add styles to the form container */
         .form-container {
-             max-width: 10%;
+             max-width: 200px;
              padding: 10px;
              background-color: white;
         }
@@ -99,7 +99,7 @@
         .dropbtn {
              background-color: DodgerBlue;
              color: white;
-             min-width: 80%;
+             min-width: 100px;
              font-size: 10px;
              cursor: pointer;
          }
@@ -164,7 +164,7 @@
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <button type="submit" class="btn">Sign in</button>
+    <button class="btn" onclick="User">Sign in</button>
     <h6 style="text-algin: center"> not yet signed up?<a herf type="button" class="btn SignUp" onclick="SignUpForm()">Sign up</a></h6>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
@@ -177,8 +177,22 @@ function openForm() {
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
+} 
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+function User() {
+    document.getElementById("myForm").style.display = "none";
+    ctx.beginPath();
+    ctx.arc(25, 15, 10, 0, 2 * Math.PI);
+    ctx.stroke();
+    document.getElementById("myForm").style
+    document.getElementById("myForm").style
+    document.getElementById("myForm").style
+    document.getElementById("myForm").style
 }
 </script>
+<noscript>404 <br> try again</noscript>
         
        
             <button class="dropbtn_header" style="margin: 0px;">Home</button>
